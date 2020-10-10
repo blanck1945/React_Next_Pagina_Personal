@@ -4,5 +4,5 @@ const prefix =
     : "https://sq-heroku-react.herokuapp.com/";
 
 export const projectRoutes = {
-  getAllProjects: prefix + "projects/all",
+  getAllProjects: prefix + "api/projects/all",
 };
