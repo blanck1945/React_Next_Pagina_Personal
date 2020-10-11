@@ -7,7 +7,8 @@ export interface Project {
   project_github: string;
   project_img: string;
   project_state: boolean;
-  project_tech: string[];
+  project_front: string[];
+  project_back: string[];
 }
 
 //Comentario dos

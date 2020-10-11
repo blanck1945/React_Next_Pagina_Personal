@@ -1,6 +1,5 @@
 import { useEffect, useContext } from "react";
 import { NavbarContext } from "../Context/NavbarCon";
-import Header from "../component/Header";
 
 export default function Home() {
   const { setNavState } = useContext(NavbarContext);
@@ -9,8 +8,14 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
-      <Header>CV</Header>
+    <div className="center_div">
+      <div className="CV">
+        <img src="/images/CV1.png" alt="cv1" className="img" />
+      </div>
+      <div className="book_div"></div>
+      <div className="CV">
+        <img src="/images/CV2.png" alt="cv2" className="img"/>
+      </div>
     </div>
   );
 }

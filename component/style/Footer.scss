@@ -1,0 +1,37 @@
+@import "../../styles/variables";
+.footer_div {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background-color: $s_black;
+  justify-content: center;
+  border-top: 2px solid $s_blue;
+  .center_div {
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+    width: 50%;
+    .icon {
+      margin-top: 15px;
+      font-size: 3.5rem;
+      cursor: pointer;
+      height: 75%;
+    }
+    .li {
+      background-color: white;
+      color: rgb(40, 103, 178);
+    }
+    .git {
+      color: white;
+    }
+    .git:hover {
+      color: rgb(190, 191, 193);
+      transition: $tran2;
+    }
+    .li:hover {
+      background-color: rgb(40, 103, 178);
+      color: white;
+      transition: $tran2;
+    }
+  }
+}

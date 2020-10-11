@@ -1,6 +1,7 @@
 //import Global styles
 import "../styles/globals.scss";
 import "../styles/_variables.scss";
+import "../styles/home.scss";
 
 //import Layout styles
 import "../component/style/Navbar.scss";
@@ -14,6 +15,9 @@ import "../component/TypeData/TypeData.scss";
 //import Pages styles
 import "../styles/Home.module.scss";
 import "../styles/projects/projects.scss";
+
+//Import Footer styles
+import "../component/style/Footer.scss"
 
 import Layout from "../component/Layout";
 import { AppContextProvider } from "../Context/Wrapper";
