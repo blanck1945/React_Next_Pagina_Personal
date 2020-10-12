@@ -80,6 +80,7 @@
       .card_info {
         width: 50%;
         padding-left: 6px;
+        display: grid;
         min-height: 320px;
         .tech_div {
           display: grid;
@@ -139,7 +140,6 @@
       }
       .div_img {
         width: 30%;
-        height: 320px;
       }
     }
   }

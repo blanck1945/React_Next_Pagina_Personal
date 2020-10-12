@@ -12,7 +12,8 @@
 
 @media (min-width: 780px) {
   .div_default {
-    display: flex;
+    display: grid;
+    grid-template-columns: 10% 88%;
     align-items: center;
     flex-direction: row;
     min-height: 35px;
