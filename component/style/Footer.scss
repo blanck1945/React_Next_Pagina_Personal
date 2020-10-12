@@ -6,7 +6,7 @@
   background-color: $s_black;
   justify-content: center;
   border-top: 2px solid $s_blue;
-  .center_div {
+  .footer_center {
     display: flex;
     height: 100%;
     justify-content: space-evenly;
@@ -15,7 +15,8 @@
       margin-top: 15px;
       font-size: 3.5rem;
       cursor: pointer;
-      height: 75%;
+      height: 65%;
+      width: 65px;
     }
     .li {
       background-color: white;
@@ -33,5 +34,35 @@
       color: white;
       transition: $tran2;
     }
+  }
+}
+
+.footer_center {
+  display: flex;
+  height: 100%;
+  justify-content: space-evenly;
+  width: 50%;
+  .icon {
+    margin-top: 15px;
+    font-size: 3.5rem;
+    cursor: pointer;
+    height: 65%;
+    width: 65px;
+  }
+  .li {
+    background-color: white;
+    color: rgb(40, 103, 178);
+  }
+  .git {
+    color: white;
+  }
+  .git:hover {
+    color: rgb(190, 191, 193);
+    transition: $tran2;
+  }
+  .li:hover {
+    background-color: rgb(40, 103, 178);
+    color: white;
+    transition: $tran2;
   }
 }

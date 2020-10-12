@@ -15,9 +15,10 @@ import "../component/TypeData/TypeData.scss";
 //import Pages styles
 import "../styles/Home.module.scss";
 import "../styles/projects/projects.scss";
+import "../styles/acerca/acerca.scss";
 
 //Import Footer styles
-import "../component/style/Footer.scss"
+import "../component/style/Footer.scss";
 
 import Layout from "../component/Layout";
 import { AppContextProvider } from "../Context/Wrapper";

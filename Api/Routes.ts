@@ -3,6 +3,7 @@ const prefix =
     ? "http://localhost:3500/api/"
     : "https://sq-heroku-react.herokuapp.com/api/";
 
-export const projectRoutes = {
+export const GlobalRoutes = {
   getAllProjects: prefix + "projects/all",
+  getAllTechs: prefix + "techs/all",
 };

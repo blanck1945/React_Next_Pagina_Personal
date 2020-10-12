@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="footer_div">
-      <div className="center_div">
+      <div className="footer_center">
         <a href="https://github.com/blanck1945?tab=repositories">
           <SiGithub className="icon git" />
         </a>

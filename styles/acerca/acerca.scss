@@ -1,0 +1,107 @@
+@import "../../styles/variables";
+.acerca_div {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  .acerca_box {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    .tech {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      background-color: $s_blue;
+      .tech_title {
+        background-color: $s_black;
+        color: white;
+        height: 42px;
+        padding-left: 10px;
+        padding-top: 5px;
+      }
+      .cover {
+        .tech_row {
+          border-bottom: 1px solid $s_black;
+          display: grid;
+          align-items: center;
+          justify-content: center;
+          padding-left: 10px;
+          background-color: white;
+          min-height: 100px;
+          width: 100%;
+          grid-template-columns: 45% 45%;
+          .logo_img {
+            width: 15%;
+          }
+        }
+        .tech_row h3 {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+  @media (min-width: 660px) {
+    .acerca_box {
+      .tech {
+        .cover {
+          .tech_row {
+            border-bottom: 1px solid $s_black;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            padding-left: 10px;
+            background-color: white;
+            height: 60px;
+            width: 100%;
+            grid-template-columns: 8% 25% 35% 30%;
+            .logo_img {
+              width: 35%;
+            }
+          }
+          .tech_row h3 {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 1070px) {
+    .acerca_box {
+      flex-direction: row;
+      .tech {
+        .cover {
+          .tech_row {
+            border-bottom: 1px solid $s_black;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            padding-left: 10px;
+            background-color: white;
+            height: 60px;
+            width: 100%;
+            grid-template-columns: 8% 25% 35% 30%;
+            .logo_img {
+              width: 40%;
+            }
+          }
+          @media (min-width: 1600px) {
+            .tech_row {
+              height: 60px;
+              .logo_img {
+                width: 45%;
+              }
+            }
+          }
+        }
+      }
+      .book {
+        background-color: $s_black;
+        width: 4%;
+        border-radius: 0 0 8px 8px;
+        min-height: 80%;
+      }
+    }
+  }
+}
