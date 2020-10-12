@@ -44,11 +44,13 @@ const ProjectCard = ({ data }) => {
             aLabel={true}
           />
         </div>
+        <div className="div_img">  
         <img
           src={"/images/" + data.project_img}
           alt="starlight"
           className="project_img"
-        />
+          />
+          </div>
       </div>
     </div>
   );

@@ -15,7 +15,7 @@
   .card_center {
     display: grid;
     grid-template-columns: 100%;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     .card_info {
       width: 100%;
@@ -36,10 +36,16 @@
         border-bottom: 1px solid $s_black;
       }
     }
-    .project_img {
-      width: 90%;
-      margin: auto;
-      height: 320px;
+    .div_img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .project_img {
+        width: 90%;
+        margin: auto;
+        padding: 0 10px;
+        height: 320px;
+      }
     }
   }
 }
@@ -47,10 +53,11 @@
 @media (min-width: 710px) {
   .project_card {
     .card_center {
-      .project_img {
-        width: 80%;
-        margin: auto;
-        height: 420px;
+      .div_img {
+        .project_img {
+          width: 80%;
+          height: 390px;
+        }
       }
     }
   }
@@ -64,18 +71,14 @@
     padding-top: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 300px;
+    height: 400px;
     background-color: white;
     box-shadow: $p_shadow;
     .card_center {
       display: flex;
       min-height: 330px;
-      align-items: center;
-      justify-content: space-between;
       .card_info {
-        width: 58%;
+        width: 50%;
         padding-left: 6px;
         min-height: 320px;
         .tech_div {
@@ -92,8 +95,50 @@
           border-bottom: 1px solid $s_black;
         }
       }
-      .project_img {
-        width: 40%;
+      .div_img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45%;
+        height: 100%;
+        .project_img {
+          width: 100%;
+          height: 260px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1350px) {
+  .project_card {
+    .card_center {
+      .card_info {
+        width: 63%;
+        padding-left: 6px;
+        min-height: 320px;
+      }
+      .div_img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1550px) {
+  .project_card {
+    .card_center {
+      .card_info {
+        width: 73%;
+        padding-left: 6px;
+        min-height: 320px;
+      }
+      .div_img {
+        width: 30%;
         height: 320px;
       }
     }

@@ -19,10 +19,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 25px;
     border-top: 1px solid white;
     .page_fon {
-      width: 95%;
+      width: 100%;
       border-radius: 0 0 10px 10px;
       background-color: $s_black;
     }
