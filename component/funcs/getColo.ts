@@ -42,5 +42,7 @@ export const getColor = (text: string) => {
       return "rgb(255, 202, 42)";
     case "Knex":
       return "rgb(225, 100, 38)";
+      case "Bulma":
+        return "rgb(0, 209, 178)"
   }
 };
