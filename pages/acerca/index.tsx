@@ -83,10 +83,12 @@ const index = ({ techs }: AcercaProps) => {
   );
 };
 
-index.getInitialProps = async () => {
+export const getStaticProps = async () => {
   const { data } = await Axios.get(GlobalRoutes.getAllTechs);
   return {
-    techs: data,
+    props: {
+      techs: data,
+    },
   };
 };
 
