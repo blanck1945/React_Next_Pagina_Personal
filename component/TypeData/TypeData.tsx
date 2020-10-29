@@ -24,7 +24,7 @@ const TypeData = ({
       {para && <p className="type_text">{h3Label}</p>}
       {h3Comp && <H3>{h3Label}</H3>}
       {aLabel && (
-        <a className="link" href={h3Label}>
+        <a className="link fix-data" href={h3Label}>
           {h3Label}
         </a>
       )}

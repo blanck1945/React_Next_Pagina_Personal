@@ -1,11 +1,11 @@
 @import "../variables";
 
 .page_box {
-  .page_fon {
-    width: 100%;
-    border-radius: 0 0 10px 10px;
-    background-color: $s_black;
-  }
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: $s_black;
 }
 
 @media (min-width: 880px) {
@@ -13,18 +13,11 @@
 
 @media (min-width: 1360px) {
   .page_box {
-    width: 100%;
-    background-color: $s_blue;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-top: 1px solid white;
-    .page_fon {
-      width: 100%;
-      border-radius: 0 0 10px 10px;
-      background-color: $s_black;
-    }
   }
 }
 

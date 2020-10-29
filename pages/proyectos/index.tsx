@@ -20,26 +20,24 @@ const index: NextPage<ProjectProps> = ({ projects }) => {
 
   return (
     <div className="page_box">
-      <div className="page_fon">
-        <Title title_class="title">Paginas Webs Activas</Title>
-        {projects.map((el: Project, index: number) =>
-          el.project_type === "Pagina Web" && el.project_state === true ? (
-            <ProjectCard key={el.id} data={el} />
-          ) : null
-        )}
-        <Title title_class="title up">Aplicaciones</Title>
-        {projects.map((el: Project, index: number) =>
-          el.project_type === "Aplicación" ? (
-            <ProjectCard key={el.id} data={el} />
-          ) : null
-        )}
-        <Title title_class="title up">Paginas Web No Activas</Title>
-        {projects.map((el: Project, index: number) =>
-          el.project_state === false ? (
-            <ProjectCard key={el.id} data={el} />
-          ) : null
-        )}
-      </div>
+      <Title title_class="title">Paginas Webs Activas</Title>
+      {projects.map((el: Project, index: number) =>
+        el.project_type === "Pagina Web" && el.project_state === true ? (
+          <ProjectCard key={el.id} data={el} />
+        ) : null
+      )}
+      <Title title_class="title up">Aplicaciones</Title>
+      {projects.map((el: Project, index: number) =>
+        el.project_type === "Aplicación" ? (
+          <ProjectCard key={el.id} data={el} />
+        ) : null
+      )}
+      <Title title_class="title up">Paginas Web No Activas</Title>
+      {projects.map((el: Project, index: number) =>
+        el.project_state === false ? (
+          <ProjectCard key={el.id} data={el} />
+        ) : null
+      )}
     </div>
   );
 };
