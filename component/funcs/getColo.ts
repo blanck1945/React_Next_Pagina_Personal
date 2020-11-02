@@ -42,7 +42,15 @@ export const getColor = (text: string) => {
       return "rgb(255, 202, 42)";
     case "Knex":
       return "rgb(225, 100, 38)";
-      case "Bulma":
-        return "rgb(0, 209, 178)"
+    case "Bulma":
+      return "rgb(0, 209, 178)";
+    case "MongoDB":
+      return "rgb(18, 146, 79)";
+    case "mongoose":
+      return "rgb(136, 0, 0)";
+    case "Next":
+      return "rgb(64, 64, 64)";
+    case "React-Control-Form":
+      return "rgb(44, 87, 64)";
   }
 };

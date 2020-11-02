@@ -76,12 +76,12 @@
     box-shadow: $p_shadow;
     .card_center {
       display: flex;
-      min-height: 330px;
+      min-height: 390px;
       .card_info {
         width: 50%;
         padding-left: 6px;
         display: grid;
-        min-height: 320px;
+        min-height: 350px;
         .tech_div {
           display: grid;
           grid-template-columns: 24.75% 24.75% 24.75% 24.75%;

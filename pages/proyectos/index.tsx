@@ -18,6 +18,8 @@ const index: NextPage<ProjectProps> = ({ projects }) => {
     setNavState({ title: "Mis Proyectos" });
   }, []);
 
+  console.log(projects);
+
   return (
     <div className="page_box">
       <Title title_class="title">Paginas Webs Activas</Title>
@@ -28,11 +30,17 @@ const index: NextPage<ProjectProps> = ({ projects }) => {
       )}
       <Title title_class="title up">Aplicaciones</Title>
       {projects.map((el: Project, index: number) =>
-        el.project_type === "Aplicación" ? (
+        el.project_type === "Aplicación" && el.project_state !== false ? (
           <ProjectCard key={el.id} data={el} />
         ) : null
       )}
-      <Title title_class="title up">Paginas Web No Activas</Title>
+      <Title title_class="title up">Librerias</Title>
+      {projects.map((el: Project, index: number) =>
+        el.project_type === "Libreria" ? (
+          <ProjectCard key={el.id} data={el} />
+        ) : null
+      )}
+      <Title title_class="title up">Proyectos no activos</Title>
       {projects.map((el: Project, index: number) =>
         el.project_state === false ? (
           <ProjectCard key={el.id} data={el} />
